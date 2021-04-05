@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Tour and travel page</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Mulish:wght@300;400;700&family=Playfair+Display:wght@700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="css/slick.css">
+  <link rel="stylesheet" href="css/jquery.rateyo.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <header class="header" id="header">
+    <div class="container">
+      <div class="header__inner">
+        <a class="header__logo logo" href="#">
+          <img src="images/logo.svg" alt="logo">
+        </a>
+
+          <nav class="menu">
+            <button class="menu__btn">
+              <span class="menu__line"></span>
+              <span class="menu__line"></span>
+              <span class="menu__line"></span>
+            </button>
+            <ul class="menu__list">
+              <li class="menu__item">
+                <a class="menu__link" href="#header">Home</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="#destination">Destinations</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="#about">About</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="#blog">Blog</a>
+              </li>
+            </ul>
+          </nav>
+
+          <div class="user__nav">
+          <a class="user__log-in" href="#">Login</a>
+          <a class="user__sing-up" href="#">Register</a>
+</div>
+      </div>
+    </div>
+  </header>
+
+   <main class="main">
+    <h1 class="visuallyhidden">hidden</h1> 
+
+    <section class="explore">
+      <div class="container">
+        <div class="explore__inner">
+          <div class="explore__content">
+            <span class="explore__title title">Explore and
+              Travel</span>
+            <form class="form__find">
+              <label class="form__label">Holiday finder</label>
+              <div class="form__selects">
+              <div class="form__select-inner">
+              <select class="form__select">
+                <option disabled selected>Location</option>
+                <option>Africa</option>
+                <option>Antarctica</option>
+                <option>Asia</option>
+                <option>Europe</option>
+                <option>America</option>
+              </select>
+            </div>
+              <div class="form__select-inner">
+              <select class="form__select">
+                <option disabled selected>Activity</option>
+                <option>Tour</option>
+                <option>Active</option>
+                <option>Beach</option>
+                <option>Swimming</option>
+                <option>Gym</option>
+                <option>Walk</option>
+              </select>
+            </div>
+              <div class="form__select-inner">
+              <select class="form__select">
+                <option disabled selected>Grade</option>
+                <option>Easy</option>
+                <option>New ones</option>
+                <option>Prof</option>
+                <option>For kids</option>
+                <option>Adults</option>
+                <option>Like home</option>
+              </select>
+            </div>
+              <div class="form__select-inner">
+              <select class="form__select">
+                <option disabled selected>Date</option>
+                <option>January</option>
+                <option>February</option>
+                <option>March</option>
+                <option>April</option>
+                <option>May</option>
+                <option>June</option>
+                <option>July</option>
+                <option>Augest</option>
+                <option>September</option>
+                <option>October</option>
+                <option>November</option>
+                <option>Desember</option>
+              </select>
+            </div>
+          </div>
+              <button class="form__btn" type="submit">Explore</button>
+            </form>
+          </div>
+
+          <img class="explore__img" src="images/explore-bgd.png">
+        </div>
+      </div>
+    </section>
+
+    <section class="about">
+      <div class="container">
+
+        <div class="new">
+          <img class="new__img" src="images/new-bgd.png" alt="new">
+          <div class="new__content">
+            <span class="new__title title">A new way to explore the world</span>
+            <p class="new__text">For decades travellers have reached for Lonely Planet books when looking to plan and
+              execute their perfect
+              trip, but now, they can also let Lonely Planet Experiences lead the way</p>
+            <a class="new__btn" href="#">Learn more</a>
+          </div>
+        </div>
+
+         <div class="destination" id="destination">
+
+          <div class="destination__content">
+            <span class="destination__title title">Featured destinations</span>
+            <a class="destination__link" href="#">View all</a>
+          </div>
+
+          <div class="destination__cards">
+
+            <div class="destination__card">
+              <img class="destination__img" src="images/destination/raja.png" alt="">
+              <div class="destination__text">
+                <span class="destination__place">Raja Ampat
+                </span>
+                <span class="destination__country">Indonesia</span>
+              </div>
+            </div>
+
+            <div class="destination__card">
+              <img class="destination__img" src="images/destination/fanji.png" alt="">
+              <div class="destination__text">
+                <span class="destination__place">Fanjingshan
+                </span>
+                <span class="destination__country">China</span>
+              </div>
+            </div>
+
+            <div class="destination__card">
+              <img class="destination__img" src="images/destination/vevey.png" alt="">
+              <div class="destination__text">
+                <span class="destination__place">Vevey
+                </span>
+                <span class="destination__country">Switzerland</span>
+              </div>
+            </div>
+
+            <div class="destination__card">
+
+              <img class="destination__img" src="images/destination/skadar.png" alt="">
+              <div class="destination__text">
+                <span class="destination__place">Skadar
+                </span>
+                <span class="destination__country">Montenegro</span>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+      <div class="guides" id="about">
+          <div class="guides__content">
+            <span class="guides__title title">Guides by Thousand
+              Sunny</span>
+            <p class="guides__text">Packed with tips and advice from our on-the-ground experts, our city guides
+              app (iOS and Android) is the ultimate resource before and during a trip.</p>
+            <a class="guides__btn" href="#">Download</a>
+          </div>
+          <img class="guides__img" src="images/guides-bgd.png" alt="new">
+        </div>
+
+         <div class="reviews">
+
+          <span class="reviews__title title">Testimonials</span>
+
+          <div class="slider">
+            <div class="slider__wrapper">
+              <div class="slider__item">
+                <div class="slider__inner">
+                  <div class="slider__content">
+                    <div class="slider__stars"></div>
+                    <article class="slider__review">
+                      <p class="slider__text">“Quisque in lacus a urna fermentum euismod. Integer mi nibh, dapibus ac
+                        scelerisque eu,
+                        facilisis quis purus. Morbi blandit sit amet turpis nec”</p>
+                      <span class="slider__author">Edward Newgate</span>
+                      <span class="slider__job">Founder Circle</span>
+                    </article>
+                  </div>
+                  <img class="slider__img" src="images/slider/1.png" alt="Edward Newgate">
+                  <span class="slider__arr"></span>
+                </div>
+              </div>
+
+              <div class="slider__item">
+                <div class="slider__inner">
+                  <div class="slider__content">
+                    <div class="slider__stars"></div>
+                    <article class="slider__review">
+                      <p class="slider__text">“Quisque in lacus a urna fermentum euismod. Integer mi nibh, dapibus ac
+                        scelerisque eu,
+                        facilisis quis purus. Morbi blandit sit amet turpis nec”</p>
+                      <span class="slider__author">Edward Newgate</span>
+                      <span class="slider__job">Founder Circle</span>
+                    </article>
+                  </div>
+                  <img class="slider__img" src="images/slider/1.png" alt="Edward Newgate">
+                  <span class="slider__arr"></span>
+                </div>
+              </div>
+
+              <div class="slider__item">
+                <div class="slider__inner">
+                  <div class="slider__content">
+                    <div class="slider__stars"></div>
+                    <article class="slider__review">
+                      <p class="slider__text">“Quisque in lacus a urna fermentum euismod. Integer mi nibh, dapibus ac
+                        scelerisque eu,
+                        facilisis quis purus. Morbi blandit sit amet turpis nec”</p>
+                      <span class="slider__author">Edward Newgate</span>
+                      <span class="slider__job">Founder Circle</span>
+                    </article>
+                  </div>
+                  <img class="slider__img" src="images/slider/1.png" alt="Edward Newgate">
+                  <span class="slider__arr"></span>
+                </div>
+              </div>
+
+              <div class="slider__item">
+                <div class="slider__inner">
+                  <div class="slider__content">
+                    <div class="slider__stars"></div>
+                    <article class="slider__review">
+                      <p class="slider__text">“Quisque in lacus a urna fermentum euismod. Integer mi nibh, dapibus ac
+                        scelerisque eu,
+                        facilisis quis purus. Morbi blandit sit amet turpis nec”</p>
+                      <span class="slider__author">Edward Newgate</span>
+                      <span class="slider__job">Founder Circle</span>
+                    </article>
+                  </div>
+                  <img class="slider__img" src="images/slider/1.png" alt="Edward Newgate">
+                  <span class="slider__arr"></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      <div class="stories" id="blog">
+          <div class="stories__content">
+            <span class="stories__title title">Trending stories</span>
+            <a class="stories__link" href="#">View all</a>
+          </div>
+
+          <div class="stories__articles">
+
+            <article class="article">
+              <h2 class="article__title">
+                <a class="article__title-link" href="#">The many benefits of
+                  taking a healing holiday</a>
+              </h2>
+              <div class="article__img">
+                <img src="images/article/1.png" alt="">
+              </div>
+              <p class="article__text">‘Helaing holidays’ are on the rise
+                tohelp maximise your health and happines...</p>
+              <a class="article__link" href="#">Read more</a>
+            </article>
+
+            <article class="article">
+              <h2 class="article__title">
+                <a class="article__title-link" href="#">The best Kyoto restaurant
+                  to try Japanese food</a>
+              </h2>
+              <a class="article__img" href="#">
+                <img src="images/article/2.png" alt="">
+              </a>
+              <p class="article__text">From tofu to teahouses, here’s our guide to Kyoto’s best restaurants
+                to visit...</p>
+              <a class="article__link" href="#">Read more</a>
+            </article>
+
+            <article class="article">
+              <h2 class="article__title">
+                <a class="article__title-link" href="#">Skip Chichen Itza and head
+                  to this remote Yucatan</a>
+              </h2>
+              <a class="article__img" href="#">
+                <img src="images/article/3.png" alt="">
+              </a>
+              <p class="article__text">It’s remote and challenging to get,
+                but braving the jungle and exploring
+                these ruins without the...</p>
+              <a class="article__link" href="#">Read more</a>
+            </article>
+
+            <article class="article">
+              <h2 class="article__title">
+                <a class="article__title-link" href="#">Surf’s up at these beginner
+                  spots around the world</a>
+              </h2>
+              <a class="article__img" href="#">
+                <img src="images/article/4.png" alt="">
+              </a>
+              <p class="article__text">If learning to surf has in on your to-
+                do list for a while, the good news
+                is: it’s never too late...</p>
+              <a class="article__link" href="#">Read more</a>
+            </article>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__content">
+        <div class="footer__column">
+          <a class="logo footer__logo" href="#">
+            <img src="images/logo.svg" alt="logo">
+          </a>
+
+          <p class="footer__text">Plan and book your perfect trip with
+            expert advice, travel tips destination
+            information from us</p>
+          <span class="footer__copy">©2020 Thousand Sunny. All rights reserved</span>
+        </div>
+
+        <div class="footer__column">
+          <ul class="footer__list">
+            <li class="footer__item">Destinations</li>
+            <li class="footer__item">
+              <a class="footer__link">Africa</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link">Antarctica</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link">Asia</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link">Europe</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link">America</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer__column">
+          <ul class="footer__list">
+            <li class="footer__item">Shop</li>
+            <li class="footer__item">
+              <a class="footer__link">DestinationGuides</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link">Pictorial & Gifts</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link">Special Offers</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link">Delivery Times</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link"> FAQs</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer__column">
+          <ul class="footer__list">
+            <li class="footer__item">Interests</li>
+            <li class="footer__item">
+              <a class="footer__link">Adventure Travel</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link">Art And Culture</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link">Wildlife And Nature</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link">Family Holidays</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link">Food And Drink</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="social">
+        <ul class="social__list">
+          <li class="social__item">
+            <a class="socail__link" href="#"><img src="images/icons/twitter.svg" alt="twitter"></a>
+          </li>
+          <li class="social__item">
+            <a class="socail__link" href="#"><img src="images/icons/facebook.svg" alt="facebook"></a>
+          </li>
+          <li class="social__item">
+            <a class="socail__link" href="#"><img src="images/icons/instagram.svg" alt="instagram"></a>
+          </li>
+          <li class="social__item">
+            <a class="socail__link" href="#"><img src="images/icons/linkedin.svg" alt="linkedin"></a>
+          </li>
+          <li class="social__item">
+            <a class="socail__link" href="#"><img src="images/icons/youtube.svg" alt="youtube"></a>
+          </li>
+        </ul>
+      </div>
+
+    </div>
+  </footer> 
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="js/slick.min.js"></script>
+  <script src="js/jquery.rateyo.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>
